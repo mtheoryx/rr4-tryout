@@ -2,14 +2,16 @@ import React from 'react';
 import { 
   BrowserRouter as Router, 
   Route,
-  Link
+  NavLink
 } from 'react-router-dom';
+
+import './App.css';
 
 const Links = () => (
   <nav>
-    <Link to="/">Home</Link>
-    <Link to={{pathname: '/about'}}>About</Link>
-    <Link replace to="/contact">Contact</Link>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to={{pathname: '/about'}}>About</NavLink>
+    <NavLink replace to="/contact">Contact</NavLink>
   </nav>
 );
 
